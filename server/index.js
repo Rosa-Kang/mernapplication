@@ -17,7 +17,7 @@ const CONNECTION_URL = "mongodb+srv://memories2023:6CwsParMeJb2HMcT@cluster0.zt1
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => app.listen(PORT, () => console.log(`Server running on port: http://localhost:${PORT}`)))
+    .then(() => app.listen(PORT, () => console.log(`Server running on port: http://localhost:${PORT}/posts`)))
     .catch((err) => console.log(err.message));
 
 mongoose.set('strictQuery', true);
